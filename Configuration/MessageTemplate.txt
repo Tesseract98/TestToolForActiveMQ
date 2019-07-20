@@ -1,0 +1,33 @@
+{1:F01ZYGCGB20XXXX0919155231}{2:O5182138171206@{fileValue('tradeSources')}11167792461712062138N}{4:
+:16R:GENL
+:20C::SEME//@{id(16)}
+:23G:NEWM
+:22F::TRTR//TRAD
+:16R:LINK
+:20C::COMM//SWIFT@{id(11)}
+:16S:LINK
+:16S:GENL
+:16R:CONFDET
+:98C::TRAD//@{dateTime('yyyyMMddhhmmss')}
+:98A::SETT//@{dateTime('yyyyMMdd',2)}
+:90B::DEAL//ACTU/@{fileValue('currencies')}@{decimal(0,99999999,5)}
+:94B::TRAD//EXCH/@{fileValue('tradingVenues')}
+:22H::BUSE//BUYI
+:22H::PAYM//APMT
+:16R:CONFPRTY
+:95R::BUYR//@{uniqueFileValue('firms')}
+:20C::PROC//Buy Oref
+:16S:CONFPRTY
+:16R:CONFPRTY
+:95R::SELL//@{uniqueFileValue('firms')}
+:20C::PROC//Sell Oref
+:16S:CONFPRTY
+:36B::CONF//UNIT/@{number(1,9999)}
+:35B:ISIN @{fileValue('instruments')}
+:16R:FIA
+:16S:FIA
+:16S:CONFDET
+:16R:SETDET
+:22F::SETR//TRAD
+:16S:SETDET
+-}{5:{MAC:12345678}{CHK:123456789ABC}}
