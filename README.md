@@ -30,7 +30,12 @@ MQ Loader - тестовый инструмент, генерирующий по
 Для ведения лога можно использовать библиотеку log4j. Статистика должна выводиться с уровнем info. Кроме того, в лог должны попадать сообщений об ошибках. А с уровнем debug должны логгироваться все отправляемые сообщения.
 Для сборки проекта необходимо использовать Gradle.
 Полезные ссылки
-● Скачать ActiveMQ: -https://activemq.apache.org/components/classic/download/;
+● Скачать ActiveMQ: -
+{
+
+https://activemq.apache.org/components/classic/download/;
+
+}
 ● Как запустить ActiveMQ и зайти в веб-консоль для управления: -https://activemq.apache.org/getting-started#StartingActiveMQStartingActiveMQ;
 ● Пример кода для работы с ActiveMQ: -https://activemq.apache.org/hello-world;
 ● О библиотеке MVEL: -http://mCompiledTemplate vel.documentnode.com/;
@@ -119,9 +124,8 @@ public class MvelTest<br/>
 		CompiledTemplate template = TemplateCompiler.compileTemplate("@{max(A, B)}");<br/>
 		System.out.println(TemplateRuntime.execute(template, new MvelTest(), vars));<br/>
 	}<br/>
-	
 	public int max(int a, int b)<br/>
 	{<br/>
 		return Math.max(a, b);<br/>
 	}<br/>
-}<br/>
+}
