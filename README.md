@@ -1,6 +1,6 @@
 # TestToolForActiveMQ
 
-#Задание#
+### Задание ###
 
 MQ Loader - тестовый инструмент, генерирующий поток сообщений для тестируемой системы, которая получает сообщения через очередь ActiveMQ.
 
@@ -36,7 +36,7 @@ MQ Loader - тестовый инструмент, генерирующий по
 ● О библиотеке MVEL: -http://mCompiledTemplate vel.documentnode.com/;
 ● Создание простого проекта с Gradle: -https://guides.gradle.org/building-java-applications/;
 
-Пример шаблона сообщения
+### Пример шаблона сообщения ###
 
 {1:F01ZYGCGB20XXXX0919155231}{2:O5182138171206@{fileValue('tradeSources')}11167792461712062138N}{4:<br/>
 :16R:GENL<br/>
@@ -72,7 +72,7 @@ MQ Loader - тестовый инструмент, генерирующий по
 :16S:SETDET<br/>
 -}{5:{MAC:12345678}{CHK:123456789ABC}}<br/>
 
-#Поля:#
+### Поля: ###
 
 TRAD (tradeDate)	Trade date - фактическая дата осуществления сделки.<br/>
 Требование к полю: дата в формате - 'yyyyMMddhhmmss'.<br/>
@@ -100,7 +100,7 @@ instruments	Осуществляя операции на финансовом р
 Требование к полю: 12 символов, буквенно-цифровой код.<br/>
 Пример: OV03054473OV, DMI00T78R55Y, 54P3YT343512
 
-#Как работать с MVEL#
+### Как работать с MVEL ###
 
 import org.mvel2.templates.CompiledTemplate;<br/>
 import org.mvel2.templates.TemplateCompiler;<br/>
