@@ -1,5 +1,10 @@
 package main;
 
+import main.log.LoggerThread;
+import main.log.StatisticLog;
+import main.producer.DelayObject;
+import main.producer.Producer;
+import main.tools.MainLogic;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
